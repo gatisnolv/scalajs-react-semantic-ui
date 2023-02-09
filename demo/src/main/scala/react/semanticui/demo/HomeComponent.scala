@@ -38,7 +38,7 @@ object HomeComponent {
       .build
   */
   val component = ScalaFnComponent.withHooks[Unit].useState(0).render((_, state) =>
-    <.div(s"heyyyyyy: ${state.value}", <.button(^.onClick --> state.modState(_ + 1))))
+    <.div(s"heyy: ${state.value}", <.button(^.onClick --> state.modState(_ + 1))))
 
   def apply() = component()
 }
